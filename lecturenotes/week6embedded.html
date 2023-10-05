@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 6 Embedded CSS</title>
+        <style>
+            h1 
+            {
+                color:green;
+            }
+            body
+            {
+                /* body selects the body */
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color:gainsboro;
+            }
+            p, h1, a /* grouped selector*/
+            {
+                /* in em 2 is twice default size */
+                font-size: 2em;
+                font-weight:bolder;
+                background-color:lightcyan;
+                
+            }
+            p a 
+            {
+                text-decoration: none;
+            }
+            #secondpara
+            {
+                color:blue;
+            }
+            .yellow
+            {
+            color: yellow;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>CSS</h1>
+        <a class="yellow" href="http://www.amazon.com">Amazon</a>
+        <p><a href="http://www.ebay.com">Ebay</a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis quod doloremque. Perspiciatis repellat facilis minima soluta labore incidunt alias quidem porro illum eligendi, harum provident beatae corrupti atque commodi.</p>
+        <!-- each value for id must be unique-->
+        <p id="secondpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique inventore, blanditiis molestiae ut atque excepturi alias saepe culpa sequi numquam voluptatum itaque porro iusto sed voluptate quod dolor! Modi, maxime.</p>
+    </body>
+</html>
