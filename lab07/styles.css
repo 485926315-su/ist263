@@ -1,0 +1,49 @@
+h1
+{
+    color: #FF6AC2;
+}
+
+h2
+{
+    color: #FF6AC2;
+}
+
+p
+{
+    color: #FFE5E5;
+}
+
+a
+{
+    color: #FFE5E5;
+}
+
+nav
+{
+    background-color: #B931FC;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a 
+{
+    color: #FFE5E5;
+}
+
+nav a:hover 
+{
+    background-color: #FF6AC2;
+}
+
+ul
+{
+    color: #FFE5E5;
+}
+
+body
+{
+    background-color: #5D12D2;
+}
+
+
+
