@@ -1,0 +1,85 @@
+h1
+{
+    color: #FF6AC2;
+}
+
+h2
+{
+    color: #FF6AC2;
+}
+
+p, li, form, table, nav
+{
+    color: #FFE5E5;
+}
+
+a
+{
+    color: #FFE5E5;
+}
+
+nav
+{
+    background-color: #B931FC;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a 
+{
+    color: #FFE5E5;
+}
+
+nav a:hover 
+{
+    background-color: #FF6AC2;
+}
+
+ul
+{
+    color: #FFE5E5;
+}
+
+body
+{
+    background-color: #5D12D2;
+}
+
+.right
+{
+    float: right;
+}
+
+.row1, .row2
+{
+    display: flex;
+    margin: 30px;
+    border-radius: 2em;
+}
+
+.row1
+{
+    background-color: #606833;
+}
+.row2 
+{
+    background-color: #642e4e;
+}
+
+.col3, .col4
+{
+    margin: auto;
+}
+
+.col1, .col2
+{
+    margin-left: 50px;
+}
+
+.banner
+{
+    padding-left: 20%;
+}
+
+
+
