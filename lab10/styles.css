@@ -79,7 +79,6 @@ body
 
 .banner
 {
-    padding-left: 5%;
     max-width: 100%;
 }
 
@@ -88,8 +87,6 @@ body
     text-align: center;
     margin-top: 20px;
 }
-
-
 
 .row
 {
