@@ -151,4 +151,9 @@ svg
     {
         display: none;
     }
+
+    p, h1, h2, ul, nav a 
+    {
+    font-size: 2vw;
+    }
 }
