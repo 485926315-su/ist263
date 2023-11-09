@@ -129,7 +129,7 @@ p, h1, h2, ul, nav a
 {
         background-color: #ae00ff;
         padding: 5px;
-        border: 1px solid #000000;
+        border: 1px solid #fffbfb;
         text-decoration: none;
         position: absolute; /* positions an element relative to the top left corner of the viewport */
         left: -999px;
