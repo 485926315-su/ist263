@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        .skip 
+        {
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; /* positions an element relative to the top left corner of the viewport */
+            left: -999px;
+        }
+        .skip:focus 
+        {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="" class="skip" tabindex="1">Skip to Content</a><br>
+        <a href="https://www.syr.edu" tabindex="3">Syracuse University</a>
+        <a href="https://www.ischool.syr.edu" tabindex="4">iSchool</a>
+        <a href="https://www.soe.syr.edu" tabindex="2">School of Education</a>
+    </nav>
+    <main>
+        <h1>Accessibility or A11y</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti deleniti similique repudiandae quo. Cum, vel. Eius perspiciatis totam maiores explicabo magnam pariatur, hic iste, harum, sed dolores aspernatur reiciendis?</p>
+        
+    </main>
+</body>
+</html>
