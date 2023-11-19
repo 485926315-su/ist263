@@ -1,3 +1,5 @@
+/* using https://visme.co/blog/website-color-schemes/ for some stuff */
+
 /* UNIVERSAL STUFF */
 *
 {
@@ -238,12 +240,16 @@ body
         display: block;
         font-size: 1em;
     }
+    
+    /* index */
+
+
     /* section 1 */
     .section1 h1 
     {
         font-size: 2em;
     }
-    
+
     /* section 2 */
     .row1, .row2 
     {
@@ -282,4 +288,5 @@ body
     }
 
 }
+
 
