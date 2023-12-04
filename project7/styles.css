@@ -1,0 +1,372 @@
+/* using https://visme.co/blog/website-color-schemes/ for some stuff */
+
+/* UNIVERSAL STUFF */
+*
+{
+    box-sizing: border-box;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    min-height: 4.5rem;
+    mix-blend-mode:color-dodge;
+    background-color:transparent;
+}
+
+nav a 
+{
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #F0EBF4;
+    font-weight: bold;
+}
+
+nav a:hover 
+{
+    background-color: #5C2018;
+    border-radius: 5px;
+}
+
+body 
+{
+    background-color: black;
+    line-height: 150%;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+img
+{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* first section */
+.section1
+{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.main
+{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.main img 
+{
+    position: absolute;
+    z-index: 1;
+    min-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.section1 h1 
+{
+    position:absolute;
+    top: 64%;
+    z-index: 3;
+    color: #F0EBF4;
+    font-size: 10em;
+    font-family:serif;
+    font-weight: bolder;
+}
+
+
+
+/* INDEX */
+
+/* second section */
+.section2 
+{
+    position: relative;
+}
+.parallax2 
+{
+    position: sticky;
+    top: 0px;
+    min-height: 100vh;
+}
+.parallax2 img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha (last value) for transparency */
+    z-index: 1; /* Place the overlay above the image */
+}
+.parallax2 img
+{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    filter: blur(3.5px);
+    object-fit: cover;
+    z-index: 0;
+    top: 0px;
+}
+.row1, .row2 
+{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items:center;
+    -webkit-box-align:center;
+    position: relative;
+    bottom: 60vh;
+}
+.left, .right
+{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.left 
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #BC4639;
+    padding: 2em;
+    border-radius: 2em;
+    padding-bottom: 3em;
+}
+.left h2
+{
+    color: #F0EBF4;
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.left p
+{
+    color: #F0EBF4;
+    line-height: 1.1;
+    font-size: 2em;
+}
+.right img 
+{
+    width: 100%;
+    object-fit:contain; 
+    border-radius: 1em;
+}
+.section2 button 
+{
+    margin-top: 6%;
+    background-color: #2e5aa1; 
+    border:#A1C3D1 1px solid;
+    color: #F0EBF4;
+    padding: 18px 43px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.section2 button:hover 
+{
+    background-color:#64302b;
+}
+
+/* third section */
+.section3 
+{
+    position: relative;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    min-height: 100vh;
+}
+.parallax3
+{
+    position: sticky;
+    background-color:#5C2018;
+    height: 110vh;
+}
+.section3 blockquote, .section3 iframe 
+{
+    position: absolute;
+}
+.section3 blockquote 
+{
+    margin-top: 30%;
+    color: #F3E0DC;
+    margin-left: 31%;
+    font-size: 2em;
+    line-height: 3;
+    font-family: fantasy;
+    text-align: center; 
+}
+#video
+{
+    background-color: white;
+    margin-left: 36vw;
+    margin-bottom: 30vh;
+    margin-top: 10%;
+}
+
+
+
+/* SUMMARY */
+
+/* section 1 */
+#summarySection1 h1
+{
+    mix-blend-mode:color-dodge;
+}
+#summaryMain 
+{
+    filter:brightness(70%) saturate(150%);
+}
+
+/* section 2 */
+.SummarySection 
+{
+    
+}
+.Summary
+{
+    position: relative;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-pack: center;
+    justify-content:center;
+    align-items:center;
+}
+.SummaryLeft
+{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: center;
+}
+.SummarySectionMain
+{
+    position: sticky;
+    top: 0px;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-left: 50%;
+}
+.SummaryLeft h2, .SummaryLeft p, .SummaryLeft img 
+{
+    position: relative;
+}
+.summaryLeft p
+{
+    
+}
+#upbringing, #accomplishments
+{
+    background-color:rgb(230, 209, 154);
+}
+#style
+{
+    background-color:#dda679;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 800px)
+{
+    /* universal */
+    nav 
+    {
+        overflow: hidden;
+        display: block;
+        position:absolute;
+        z-index: 4;
+        left: 17%;  
+        top: 75%;
+    }
+    nav a 
+    {
+        
+        font-size: 1em;
+    }
+
+    /* index */
+
+
+    /* section 1 */
+    .section1 h1 
+    {
+        font-size: 2em;
+    }
+
+    /* section 2 */
+    .row1, .row2 
+    {
+        flex-wrap: wrap;
+        margin-bottom: 20%;
+    }
+    .left, .right 
+    {
+        flex: auto;
+    }
+    .left h2
+    {
+        font-size: 2em;
+    }
+    .left p 
+    {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    .left button 
+    {
+        padding: 10px 20px;
+    }
+    /* section 3 */
+    #video 
+    {
+        margin-left: 6em;
+        width:300px;
+    }
+    .section3 blockquote 
+    {
+        margin-top: 50vh;
+        margin-left: 10%;
+        text-align:center;
+        font-size: 1em;
+    }
+
+}
+
+
