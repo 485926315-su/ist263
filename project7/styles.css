@@ -17,7 +17,7 @@ nav
     background-color:transparent;
 }
 
-nav a 
+nav a
 {
     font-size: 1.5em;
     text-decoration: none;
@@ -27,13 +27,13 @@ nav a
     font-weight: bold;
 }
 
-nav a:hover 
+nav a:hover
 {
     background-color: #5C2018;
     border-radius: 5px;
 }
 
-body 
+body
 {
     background-color: black;
     line-height: 150%;
@@ -76,7 +76,7 @@ img
     -webkit-box-align: center;
     align-items: center;
 }
-.main img 
+.main img
 {
     position: absolute;
     z-index: 1;
@@ -84,13 +84,13 @@ img
     object-fit: cover;
     width: 100%;
 }
-.section1 h1 
+.section1 h1
 {
     position:absolute;
     top: 64%;
     z-index: 3;
     color: #F0EBF4;
-    font-size: 10em;
+    font-size: 8em;
     font-family:serif;
     font-weight: bolder;
 }
@@ -100,11 +100,11 @@ img
 /* INDEX */
 
 /* second section */
-.section2 
+.section2
 {
     position: relative;
 }
-.parallax2 
+.parallax2
 {
     position: sticky;
     top: 0px;
@@ -133,7 +133,7 @@ img
     z-index: 0;
     top: 0px;
 }
-.row1, .row2 
+.row1, .row2
 {
     display: flex;
     width: 100%;
@@ -152,7 +152,7 @@ img
     margin-left: 3em;
     margin-right: 3em;
 }
-.left 
+.left
 {
     font-family:'Times New Roman', Times, serif;
     background-color: #BC4639;
@@ -173,16 +173,16 @@ img
     line-height: 1.1;
     font-size: 2em;
 }
-.right img 
+.right img
 {
     width: 100%;
-    object-fit:contain; 
+    object-fit:contain;
     border-radius: 1em;
 }
-.section2 button 
+.section2 button
 {
     margin-top: 6%;
-    background-color: #2e5aa1; 
+    background-color: #2e5aa1;
     border:#A1C3D1 1px solid;
     color: #F0EBF4;
     padding: 18px 43px;
@@ -192,13 +192,13 @@ img
     font-size: 16px;
     border-radius: 5px;
 }
-.section2 button:hover 
+.section2 button:hover
 {
     background-color:#64302b;
 }
 
 /* third section */
-.section3 
+.section3
 {
     position: relative;
     top: 0%;
@@ -213,24 +213,24 @@ img
     background-color:#5C2018;
     height: 110vh;
 }
-.section3 blockquote, .section3 iframe 
+.section3 blockquote, .section3 iframe
 {
     position: absolute;
 }
-.section3 blockquote 
+.section3 blockquote
 {
-    margin-top: 30%;
+    margin-top: 35%;
     color: #F3E0DC;
-    margin-left: 31%;
     font-size: 2em;
     line-height: 3;
     font-family: fantasy;
-    text-align: center; 
+    text-align: center;
+    margin-left: 23vw;
 }
 #video
 {
     background-color: white;
-    margin-left: 36vw;
+    margin-left: 31vw;
     margin-bottom: 30vh;
     margin-top: 10%;
 }
@@ -244,21 +244,27 @@ img
 {
     mix-blend-mode:color-dodge;
 }
-#summaryMain 
+#summaryMain
 {
     filter:brightness(70%) saturate(150%);
 }
 
 /* section 2 */
-.SummarySection 
+.SummarySection
 {
-    
+    position:relative;
+    display:flex;
+    width:100vw;
+    height:auto;
+    min-height:100vh;
+    -webkit-box-align:start;
+    align-items:flex-start;
 }
 .Summary
 {
     position: relative;
     display: flex;
-    width: 50%;
+    width: 70%;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     flex-direction:column;
@@ -279,18 +285,24 @@ img
 .SummarySectionMain
 {
     position: sticky;
-    top: 0px;
-    min-height: 100vh;
-    overflow: hidden;
-    margin-left: 50%;
+    top:0;
 }
-.SummaryLeft h2, .SummaryLeft p, .SummaryLeft img 
+.SummarySectionMain img
+{
+    transform:scaleX(-1);
+    object-fit:fill;
+}
+.SummaryLeft h2, .SummaryLeft p, .SummaryLeft img
 {
     position: relative;
+    padding-left:5em;
+    padding-right:5em;
+    padding-bottom:2em;
+
 }
 .summaryLeft p
 {
-    
+
 }
 #upbringing, #accomplishments
 {
@@ -306,18 +318,18 @@ img
 @media only screen and (max-width: 800px)
 {
     /* universal */
-    nav 
+    nav
     {
         overflow: hidden;
         display: block;
         position:absolute;
         z-index: 4;
-        left: 17%;  
+        left: 17%;
         top: 75%;
     }
-    nav a 
+    nav a
     {
-        
+
         font-size: 1em;
     }
 
@@ -325,18 +337,18 @@ img
 
 
     /* section 1 */
-    .section1 h1 
+    .section1 h1
     {
         font-size: 2em;
     }
 
     /* section 2 */
-    .row1, .row2 
+    .row1, .row2
     {
         flex-wrap: wrap;
         margin-bottom: 20%;
     }
-    .left, .right 
+    .left, .right
     {
         flex: auto;
     }
@@ -344,22 +356,22 @@ img
     {
         font-size: 2em;
     }
-    .left p 
+    .left p
     {
         font-size: 1em;
         margin-bottom: 1em;
     }
-    .left button 
+    .left button
     {
         padding: 10px 20px;
     }
     /* section 3 */
-    #video 
+    #video
     {
         margin-left: 6em;
         width:300px;
     }
-    .section3 blockquote 
+    .section3 blockquote
     {
         margin-top: 50vh;
         margin-left: 10%;
@@ -368,5 +380,3 @@ img
     }
 
 }
-
-
