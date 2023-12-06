@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 14 Participation</title>
+    <style>
+        body 
+        {
+            background-color:rgb(133, 97, 97);
+        }
+        #button
+        {
+            background-color:rgb(219, 158, 158);
+            width:30%;
+            text-align:center;
+            margin: 0 auto;
+            padding:6px;
+        }
+        #modal 
+        {
+            display:none;
+            width:30%;
+            background-color:rgb(180, 164, 144);
+            padding:10px;
+            margin: 0 auto;
+            margin-top:5em;
+            color:rgb(94, 60, 60);
+        }
+        #closeButton 
+        {
+            text-align:right;
+            margin:0;
+        }
+        #title 
+        {
+            font-family: 'Playpen Sans', cursive;
+        }
+
+    </style>
+    <script>
+        function openModal()
+        {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal()
+        {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="button" onclick="openModal();">Open Modal</p>
+    <div id="modal">
+        <p id="closeButton" onclick="closeModal();">X</p>
+        <p id="title">Subscribe to Our Newsletter!</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</body>
+</html>
