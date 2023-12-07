@@ -58,6 +58,11 @@ p, h1, h2
     font-family:serif;
 }
 
+blockquote 
+    {
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
 /* first section */
 .section1
 {
@@ -102,6 +107,7 @@ p, h1, h2
     font-family:serif;
     font-weight: bolder;
     margin-top:1em;
+    text-align:center;
 }
 
 
@@ -373,6 +379,78 @@ p, h1, h2
 }
 
 
+
+/* TIMELINE */
+
+/*top*/
+.top 
+{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.top h1 
+{
+    position:absolute;
+    top: 64%;
+    z-index: 3;
+    font-size: 8em;
+    font-family:serif;
+    font-weight: bolder;
+    margin-top:1em;
+    mix-blend-mode:difference;
+}
+#mainTimeline
+{
+    filter:brightness(95%) saturate(120%);
+}
+
+/* timeline */
+.timeline 
+{
+    position:static;
+    width:90%;
+    margin: 0 auto;
+    height:auto;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.timelineA:hover
+{
+    background-color:white;
+}
+.leftTimeline, .rightTimeline
+{
+    position:relative;
+    display:flex;
+    width:70%;
+}
+.timelinePic1, .timelinePic2, .timelinePic3, .timelinePic4, .timelinePic5
+{
+    position:sticky;
+    top:0;
+    min-width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+.timeline h3, .timeline p {mix-blend-mode:difference;}
+.timelineStart 
+{
+
+}
+.timelineReg 
+{
+    
+}
+
+
 /* MOBILE */
 @media only screen and (max-width: 800px)
 {
@@ -383,7 +461,7 @@ p, h1, h2
         display: block;
         position:absolute;
         z-index: 4;
-        left: 17%;
+        left: 13%;
         top: 75%;
     }
     nav a
