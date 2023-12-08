@@ -14,7 +14,7 @@ nav
     justify-content: space-around;
     z-index: 3;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     min-height: 4.5rem;
     mix-blend-mode:color-dodge;
     background-color:transparent;
@@ -43,6 +43,7 @@ body
     font-size: 1rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.1rem;
+    max-width:100vw;
 }
 
 img
@@ -101,7 +102,7 @@ blockquote
 .section1 h1
 {
     position:absolute;
-    top: 64%;
+    top: 68%;
     z-index: 3;
     font-size: 8em;
     font-family:serif;
@@ -398,7 +399,7 @@ blockquote
 .top h1 
 {
     position:absolute;
-    top: 64%;
+    top: 68%;
     z-index: 3;
     font-size: 8em;
     font-family:serif;
@@ -408,13 +409,13 @@ blockquote
 }
 #mainTimeline
 {
-    filter:brightness(95%) saturate(120%);
+    filter:brightness(90%) saturate(120%);
 }
 
 /* timeline */
 .timeline 
 {
-    position:static;
+    position:relative;
     width:90%;
     margin: 0 auto;
     height:auto;
@@ -429,16 +430,35 @@ blockquote
 .leftTimeline, .rightTimeline
 {
     position:relative;
-    display:flex;
     width:70%;
+}
+.leftTimeline img, .rightTimeline img 
+{
+    object-fit:cover;
+    width:50%;
+}
+.timeline1, .timeline2, .timeline3, .timeline4, .timeline5 
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 }
 .timelinePic1, .timelinePic2, .timelinePic3, .timelinePic4, .timelinePic5
 {
     position:sticky;
     top:0;
     min-width:100%;
-    height:100vh;
+    max-height:100%;
+    height:100%;
     object-fit:cover;
+    margin: 0 auto;
+    filter:brightness(40%) saturate(130%);
+    z-index:-1;
+}
+.timelinePic1 img, .timelinePic2 img, .timelinePic3 img, .timelinePic4 img, .timelinePic5 img 
+{
+    margin: 0 auto;
 }
 .timeline h3, .timeline p {mix-blend-mode:difference;}
 .timelineStart 
@@ -454,6 +474,7 @@ blockquote
 /* MOBILE */
 @media only screen and (max-width: 800px)
 {
+    * {overflow-x:hidden;}
     /* universal */
     nav
     {
@@ -469,7 +490,7 @@ blockquote
 
         font-size: 1em;
     }
-
+    /*bootstrap, react, backend, coding bootcamps kinda scuffed, htmlcssjs projects may be sufficient*/
     /* INDEX */
 
 
@@ -554,6 +575,10 @@ blockquote
     .SummaryLeft img {width:70%;}
     
     /* SummaryBottomSection */
-    .SummaryBottomPicture img{height:100vh; width:100vw; overflow:hidden;}
-    .SummaryBottomPicture {bottom:0}
+    .SummaryBottomPicture img{height:100vh; width:100vw; overflow:unset; object-fit:none; margin-left:-225px;}
+    .SummaryBottomPicture {bottom:0;}
+    .SummaryBottom {mix-blend-mode:color-dodge;}
+
+    /* TIMELINE */
+    .top h1 {font-size:2em; mix-blend-mode:color-dodge;}
 }
