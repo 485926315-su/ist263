@@ -53,13 +53,13 @@ img
     display: inline-block;
 }
 
-p, h1, h2 
+p, h1, h2
 {
     color:#F0EBF4;
     font-family:serif;
 }
 
-blockquote 
+blockquote
     {
         font-family: 'Libre Franklin', sans-serif;
     }
@@ -134,7 +134,7 @@ blockquote
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 1); /* Adjust the alpha (last value) for transparency */
-    z-index: 1; 
+    z-index: 1;
 }
 .parallax2 img
 {
@@ -299,7 +299,7 @@ blockquote
     justify-content:center;
     border:2px solid #2c59a0;
     border-radius:5px;
-    
+
 }
 .SummarySectionMain
 {
@@ -315,12 +315,12 @@ blockquote
 {
     font-size:4em;
 }
-.SummaryLeft p 
+.SummaryLeft p
 {
     margin-top:3em;
     width:70%;
 }
-.SummaryLeft img 
+.SummaryLeft img
 {
     margin-top:4em;
     width:40%;
@@ -337,11 +337,11 @@ blockquote
 }
 
 /* Summary Bottom */
-.SummaryBottomSection 
+.SummaryBottomSection
 {
     display:relative;
 }
-.SummaryBottom 
+.SummaryBottom
 {
     position:relative;
     display:flex;
@@ -352,16 +352,16 @@ blockquote
     min-height:110vh;
     margin-bottom:0;
     z-index:4;
-    
+
 }
-.SummaryBottom h2 
+.SummaryBottom h2
 {
     text-align:center;
     color:white;
     mix-blend-mode:color-dodge;
     font-size:2em;
 }
-.SummaryBottom p 
+.SummaryBottom p
 {
     margin-top:2em;
     margin-left: auto;
@@ -370,7 +370,7 @@ blockquote
     width:60vw;
     mix-blend-mode:color-dodge;
 }
-.SummaryBottomPicture 
+.SummaryBottomPicture
 {
     position:sticky;
     bottom:-30%;
@@ -384,7 +384,7 @@ blockquote
 /* TIMELINE */
 
 /*top*/
-.top 
+.top
 {
     z-index: 2;
     width: 100vw;
@@ -396,7 +396,7 @@ blockquote
     -webkit-box-pack: center;
     -webkit-box-align: center;
 }
-.top h1 
+.top h1
 {
     position:absolute;
     top: 68%;
@@ -413,7 +413,7 @@ blockquote
 }
 
 /* timeline */
-.timeline 
+.timeline
 {
     position:relative;
     width:90%;
@@ -432,42 +432,42 @@ blockquote
     position:relative;
     width:70%;
 }
-.leftTimeline img, .rightTimeline img 
+.leftTimeline img, .rightTimeline img
 {
     object-fit:cover;
     width:50%;
 }
-.timeline1, .timeline2, .timeline3, .timeline4, .timeline5 
+.timeline1, .timeline2, .timeline3, .timeline4, .timeline5
 {
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    width:100%;
 }
 .timelinePic1, .timelinePic2, .timelinePic3, .timelinePic4, .timelinePic5
 {
     position:sticky;
     top:0;
-    min-width:100%;
-    max-height:100%;
-    height:100%;
+    min-width:100vw;
+    max-height:50vh;
     object-fit:cover;
     margin: 0 auto;
     filter:brightness(40%) saturate(130%);
     z-index:-1;
 }
-.timelinePic1 img, .timelinePic2 img, .timelinePic3 img, .timelinePic4 img, .timelinePic5 img 
+.timelinePic1 img, .timelinePic2 img, .timelinePic3 img, .timelinePic4 img, .timelinePic5 img
 {
     margin: 0 auto;
 }
 .timeline h3, .timeline p {mix-blend-mode:difference;}
-.timelineStart 
+.timelineStart
 {
 
 }
-.timelineReg 
+.timelineReg
 {
-    
+
 }
 
 
@@ -526,13 +526,13 @@ blockquote
     /* section 3 */
     #video
     {
-       
+
         width:300px;
     }
     .section3 blockquote
     {
         margin-top: 40vh;
-        
+
         text-align:center;
         font-size: 1em;
     }
@@ -541,19 +541,19 @@ blockquote
 
     /* SUMMARY */
     /* SummarySection */
-    .SummarySection 
+    .SummarySection
     {
         -webkit-box-orient:vertical;
         -webkit-box-direction:reverse;
         flex-direction:column-reverse;
     }
-    .SummarySectionMain 
+    .SummarySectionMain
     {
         z-index:-1;
         min-height:100vh;
         top:0;
     }
-    .SummarySectionMain img 
+    .SummarySectionMain img
     {
         height:100vh;
     }
@@ -561,19 +561,19 @@ blockquote
     {
         font-size:1.5em;
     }
-    .SummaryLeft p 
+    .SummaryLeft p
     {
         font-size:1em;
     }
     .SummaryLeft {margin-top:1.5em; margin-bottom:1.5em; min-height:110vh;}
-    .Summary 
+    .Summary
     {
         width:70%;
         margin-left: auto;
         margin-right: auto;
     }
     .SummaryLeft img {width:70%;}
-    
+
     /* SummaryBottomSection */
     .SummaryBottomPicture img{height:100vh; width:100vw; overflow:unset; object-fit:none; margin-left:-225px;}
     .SummaryBottomPicture {bottom:0;}
