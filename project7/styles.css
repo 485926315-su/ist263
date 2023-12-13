@@ -439,12 +439,11 @@ blockquote
     transform: translateX(400px);
     margin-right:30.9%;
 }
-.leftTimeline img, .rightTimeline img
+.image
 {
-    object-fit:cover;
-    width:50vw;
     display:none;
 }
+.image img {border-radius:3%;}
 .leftTimeline h3, .rightTimeline h3 
 {
     position: relative;
@@ -473,8 +472,8 @@ blockquote
     margin-top: calc(calc(18px / 1.5));
     width:20em;
     color: #F0EBF4;
-    background-color:#BC4639;
-    padding:8px;
+    background-color:#96372d;
+    padding:10px;
     border:2px solid #1e2224;
     font-family:Impact;
 }
