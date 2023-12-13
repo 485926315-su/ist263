@@ -413,63 +413,178 @@ blockquote
 }
 
 /* timeline */
-.timeline
+.timeline 
 {
-    position:relative;
-    width:90%;
+    width:80%;
     margin: 0 auto;
-    height:auto;
+}
+.leftTimeline, .rightTimeline 
+{
     display:flex;
-    align-items:center;
-    flex-direction:column;
-}
-.timelineA:hover
-{
-    background-color:white;
-}
-.leftTimeline, .rightTimeline
-{
     position:relative;
-    width:70%;
+    width:auto;
+    flex-direction:column;
+    justify-content:center;
+}
+.leftTimeline
+{
+    border-right: 4px solid rgb(207, 196, 196);
+    transform: translateX(-400px);
+    margin-left:32%;
+    padding-top:40px;
+}
+.rightTimeline 
+{
+    border-left: 4px solid rgb(207, 196, 196);
+    transform: translateX(400px);
+    margin-right:30.9%;
 }
 .leftTimeline img, .rightTimeline img
 {
     object-fit:cover;
-    width:50%;
+    width:50vw;
+    display:none;
+}
+.leftTimeline h3, .rightTimeline h3 
+{
+    position: relative;
+    top: calc(calc(18px / 1.5) * -1);
+    padding: 12.75px 25.5px;
+    width:112px;
+    color:#F0EBF4;
+    background: #2e5aa1;
+    text-align: center;
+    z-index:500;
+    border:2px solid #1c3641;
+    border-radius:5%;
+    font-weight:bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.leftTimeline h3 
+{
+    margin-left:56%;
+}
+.rightTimeline h3 
+{
+    margin-left:10%;
+}
+.leftTimeline p, .rightTimeline p 
+{
+    margin-top: calc(calc(18px / 1.5));
+    width:20em;
+    color: #F0EBF4;
+    background-color:#BC4639;
+    padding:8px;
+    border:2px solid #1e2224;
+    font-family:Impact;
+}
+
+.dot 
+{
+    position:absolute;
+    width:2em;
+    height:2em;
+    background-color:#F0EBF4;
+    top:0;
+    border-radius:50%;
+    z-index:20;
+    border:2px solid white;
+}
+.dotbg 
+{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:transparent;
+    z-index:4;
+}
+.leftTimeline .dotbg, .leftTimeline .dot 
+{
+    top:0.3em;
+    left:95.5%;
+}
+.rightTimeline .dotbg, .rightTimeline .dot 
+{
+    top:0.3em;
+    right:95.5%;
+}
+.photo 
+{
+    text-align:center;
+    font-weight:bold;
+    font-family:sans-serif;
+}
+.image 
+{
+    margin:20px;
+    display:none;
+}
+.close, .photo {cursor:pointer;}
+.close 
+{
+    margin-left:100%;
+    font-size:3em;
+    font-weight:bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .timeline1, .timeline2, .timeline3, .timeline4, .timeline5
 {
+    position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
     width:100%;
+    border: 1px solid #ad4236;
+    background-repeat:no-repeat;
+    background-size:120%;
+    background-blend-mode:color-burn;
 }
-.timelinePic1, .timelinePic2, .timelinePic3, .timelinePic4, .timelinePic5
+
+.timeline1 
 {
-    position:sticky;
-    top:0;
-    min-width:100vw;
-    max-height:50vh;
-    object-fit:cover;
-    margin: 0 auto;
-    filter:brightness(40%) saturate(130%);
-    z-index:-1;
+    background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/22uchimura_ss-slide-RXHS-jumbo.webp");
+   
 }
-.timelinePic1 img, .timelinePic2 img, .timelinePic3 img, .timelinePic4 img, .timelinePic5 img
+.timeline2 
 {
-    margin: 0 auto;
+    background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/sp-gymnastics-b-20170407.jpg");
 }
+.timeline3 
+{
+    background-image: linear-gradient(147deg, #5C2018 0%, #666974 74%), url("../Project4/Images/kohei-uchimurajpg.jpg");
+}
+.timeline4 
+{
+    background-image: linear-gradient(147deg, #5C2018 0%, #c4a2a2 74%), url("../Project4/Images/so20120807g1a.jpg");
+}
+.timeline5 
+{
+    background-image: linear-gradient(180deg, #948080 0%, #5C2018 94%), url("../Project4/Images/np_file_146645.jpeg");
+}
+
 .timeline h3, .timeline p {mix-blend-mode:difference;}
-.timelineStart
+
+
+/* end section */
+#lastDot
 {
-
+    margin-top:330%;
 }
-.timelineReg
+#last
 {
-
+    padding-top:130vh;
+    padding-bottom:50vh;
 }
-
+#final 
+{
+    padding-bottom:50vh;
+    padding-top:5vh;
+    font-size:5em;
+    font-family:fantasy;
+    color:#A1C3D1;
+    font-weight:bold;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 800px)
@@ -526,7 +641,6 @@ blockquote
     /* section 3 */
     #video
     {
-
         width:300px;
     }
     .section3 blockquote
@@ -540,6 +654,7 @@ blockquote
 
 
     /* SUMMARY */
+    .section1 h1 {bottom:15%;}
     /* SummarySection */
     .SummarySection
     {
@@ -580,5 +695,41 @@ blockquote
     .SummaryBottom {mix-blend-mode:color-dodge;}
 
     /* TIMELINE */
-    .top h1 {font-size:2em; mix-blend-mode:color-dodge;}
+    .top h1 {font-size:2em; mix-blend-mode:color-dodge; margin-top:5px;}
+    .timeline {width:90%;}
+    .leftTimeline 
+    {
+        border:none;
+        margin-left:177.3%;
+        border-left: 4px solid rgb(207, 196, 196);
+    }
+    .rightTimeline 
+    {
+        margin-right:180%;
+        padding-top:5%;
+    }
+    .leftTimeline .dot 
+    {
+        margin-left:-101%;
+    }
+    .rightTimeline .dot 
+    {
+        margin-bottom:40px;
+    }
+    .leftTimeline h3, .rightTimeline h3 
+    {
+        margin-top:none;
+        margin-top:10%;
+        margin-left:0%;
+    }
+    #final 
+    {
+        font-size:2.2em;
+    }
+    .close 
+    {
+        margin-left:90%;
+        margin-bottom:10%;
+        
+    }
 }
