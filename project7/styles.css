@@ -585,7 +585,11 @@ blockquote
     font-weight:bold;
 }
 
-/* MOBILE */
+/* RESIZING */
+@media only screen and (max-width: 1800px)
+{
+    .section1 h1 {font-size:3em;}
+}
 @media only screen and (max-width: 800px)
 {
     
@@ -612,7 +616,7 @@ blockquote
     /* section 1 */
     .section1 h1
     {
-        font-size: 2em;
+        font-size: 1.5em;
         
     }
 
@@ -734,4 +738,11 @@ blockquote
         margin-bottom:10%;
         
     }
+}
+/* MOBILE */
+@media only screen and (max-width: 500px)
+{
+    nav a, p, blockquote {font-size: 0.8em;}
+    .leftTimeline {margin-left: 190vw;}
+    .rightTimeline {margin-right: 192vw;}
 }
