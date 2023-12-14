@@ -705,12 +705,12 @@ blockquote
     .leftTimeline 
     {
         border:none;
-        margin-left:160vw;
+        margin-left:69.9vw;
         border-left: 4px solid rgb(207, 196, 196);
     }
     .rightTimeline 
     {
-        margin-right:160vw;
+        margin-right:135vw;
         padding-top:5%;
     }
     .leftTimeline .dot 
@@ -743,6 +743,6 @@ blockquote
 @media only screen and (max-width: 500px)
 {
     nav a, p, blockquote {font-size: 0.8em;}
-    .leftTimeline {margin-left: 190vw;}
-    .rightTimeline {margin-right: 192vw;}
+    .leftTimeline {margin-left: 160vw;}
+    .rightTimeline {margin-right:160vw;}
 }
