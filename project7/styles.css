@@ -92,6 +92,7 @@ blockquote
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
+    filter: contrast(105%) saturate(130%);
 }
 .main img
 {
@@ -261,7 +262,7 @@ blockquote
 }
 #summaryMain
 {
-    filter:brightness(70%) saturate(150%);
+    filter:brightness(70%) saturate(150%) contrast(110%);
 }
 
 /* section 2 */
@@ -414,7 +415,7 @@ blockquote
 }
 #mainTimeline
 {
-    filter:brightness(90%) saturate(120%);
+    filter:brightness(90%) saturate(120%) contrast(105%);
 }
 
 /* timeline */
@@ -547,7 +548,7 @@ blockquote
 
 .timeline1
 {
-    background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/22uchimura_ss-slide-RXHS-jumbo.webp");
+    background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/22uchimura_ss-slide-RXHS-jumbo.jpg");
 
 }
 .timeline2
@@ -564,7 +565,7 @@ blockquote
 }
 .timeline5
 {
-    background-image: linear-gradient(180deg, #948080 0%, #5C2018 94%), url("../Project4/Images/np_file_146645.jpeg");
+    background-image: linear-gradient(180deg, #948080 0%, #5C2018 94%), url("../Project4/Images/np_file_146645.jpg");
 }
 
 .timeline h3, .timeline p {mix-blend-mode:difference;}
