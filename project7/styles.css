@@ -104,7 +104,7 @@ blockquote
 .section1 h1
 {
     position:absolute;
-    top: 68%;
+    top: 75%;
     z-index: 3;
     font-size: 8em;
     font-family:serif;
@@ -316,6 +316,9 @@ blockquote
 .SummaryLeft h2
 {
     font-size:4em;
+    margin-top:10%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .SummaryLeft p
 {
@@ -415,12 +418,12 @@ blockquote
 }
 
 /* timeline */
-.timeline 
+.timeline
 {
     width:80%;
     margin: 0 auto;
 }
-.leftTimeline, .rightTimeline 
+.leftTimeline, .rightTimeline
 {
     display:flex;
     position:relative;
@@ -435,7 +438,7 @@ blockquote
     margin-left:32%;
     padding-top:40px;
 }
-.rightTimeline 
+.rightTimeline
 {
     border-left: 4px solid rgb(207, 196, 196);
     transform: translateX(400px);
@@ -446,7 +449,7 @@ blockquote
     display:none;
 }
 .image img {border-radius:3%;}
-.leftTimeline h3, .rightTimeline h3 
+.leftTimeline h3, .rightTimeline h3
 {
     position: relative;
     top: calc(calc(18px / 1.5) * -1);
@@ -461,15 +464,15 @@ blockquote
     font-weight:bolder;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.leftTimeline h3 
+.leftTimeline h3
 {
     margin-left:56%;
 }
-.rightTimeline h3 
+.rightTimeline h3
 {
     margin-left:10%;
 }
-.leftTimeline p, .rightTimeline p 
+.leftTimeline p, .rightTimeline p
 {
     margin-top: calc(calc(18px / 1.5));
     width:20em;
@@ -480,7 +483,7 @@ blockquote
     font-family:Impact;
 }
 
-.dot 
+.dot
 {
     position:absolute;
     width:2em;
@@ -491,7 +494,7 @@ blockquote
     z-index:20;
     border:2px solid white;
 }
-.dotbg 
+.dotbg
 {
     position:absolute;
     width:40px;
@@ -499,29 +502,29 @@ blockquote
     background:transparent;
     z-index:4;
 }
-.leftTimeline .dotbg, .leftTimeline .dot 
+.leftTimeline .dotbg, .leftTimeline .dot
 {
     top:0.3em;
     left:95.5%;
 }
-.rightTimeline .dotbg, .rightTimeline .dot 
+.rightTimeline .dotbg, .rightTimeline .dot
 {
     top:0.3em;
     right:95.5%;
 }
-.photo 
+.photo
 {
     text-align:center;
     font-weight:bold;
     font-family:sans-serif;
 }
-.image 
+.image
 {
     margin:20px;
     display:none;
 }
 .close, .photo {cursor:pointer;}
-.close 
+.close
 {
     margin-left:100%;
     font-size:3em;
@@ -542,24 +545,24 @@ blockquote
     background-blend-mode:color-burn;
 }
 
-.timeline1 
+.timeline1
 {
     background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/22uchimura_ss-slide-RXHS-jumbo.webp");
-   
+
 }
-.timeline2 
+.timeline2
 {
     background-image: linear-gradient(147deg, #5C2018 0%, #e6c3c3 74%), url("../Project4/Images/sp-gymnastics-b-20170407.jpg");
 }
-.timeline3 
+.timeline3
 {
     background-image: linear-gradient(147deg, #5C2018 0%, #666974 74%), url("../Project4/Images/kohei-uchimurajpg.jpg");
 }
-.timeline4 
+.timeline4
 {
     background-image: linear-gradient(147deg, #5C2018 0%, #c4a2a2 74%), url("../Project4/Images/so20120807g1a.jpg");
 }
-.timeline5 
+.timeline5
 {
     background-image: linear-gradient(180deg, #948080 0%, #5C2018 94%), url("../Project4/Images/np_file_146645.jpeg");
 }
@@ -577,29 +580,36 @@ blockquote
     padding-top:130vh;
     padding-bottom:50vh;
 }
-#final 
+#final
 {
     padding-bottom:50vh;
     padding-top:5vh;
     font-size:5em;
     font-family:fantasy;
     color:#A1C3D1;
-    font-weight:bold;
 }
 
 /* RESIZING */
-@media only screen and (max-width: 1800px)
+@media only screen and (min-width: 1200px)
 {
-    .section1 h1 {font-size:3em;}
+    .section1 h1 {font-size:5em;}
+    .leftTimeline
+    {
+        margin-left:42%;
+    }
+    .rightTimeline
+    {
+        margin-right:39.8%;
+    }
 }
 @media only screen and (max-width: 800px)
 {
-    
+
     /* universal */
     body{overflow-x:hidden; width:auto;}
     nav
     {
-        
+
         display: block;
         position:absolute;
         z-index: 4;
@@ -619,7 +629,7 @@ blockquote
     .section1 h1
     {
         font-size: 1.5em;
-        
+        top: 65%;
     }
 
     /* section 2 */
@@ -681,11 +691,13 @@ blockquote
     }
     .SummaryLeft h2
     {
+        margin-top:10%;
         font-size:1.5em;
     }
     .SummaryLeft p
     {
-        font-size:1em;
+        font-size:0.8em;
+        margin-bottom:10%;
     }
     .SummaryLeft {margin-top:1.5em; margin-bottom:1.5em; min-height:110vh;}
     .Summary
@@ -704,47 +716,52 @@ blockquote
     /* TIMELINE */
     .top h1 {font-size:2em; mix-blend-mode:color-dodge; margin-top:5px;}
     .timeline {width:90%;}
-    .leftTimeline 
+    .leftTimeline
     {
         border:none;
         margin-left:69.9vw;
         border-left: 4px solid rgb(207, 196, 196);
     }
-    .rightTimeline 
+    .rightTimeline
     {
         margin-right:135vw;
         padding-top:5%;
     }
-    .leftTimeline .dot 
+    .leftTimeline .dot
     {
         margin-left:-101vw;
     }
-    .rightTimeline .dot 
+    .rightTimeline .dot
     {
         margin-bottom:40px;
     }
-    .leftTimeline h3, .rightTimeline h3 
+    .leftTimeline h3, .rightTimeline h3
     {
         margin-top:none;
         margin-top:10%;
         margin-left:0%;
     }
-        
-    #final 
+    .leftTimeline p, .rightTimeline p
+    {
+        font-family:'Courier New', Courier, monospace;
+        font-size:1em;
+    }
+
+    #final
     {
         font-size:2.2em;
     }
-    .close 
+    .close
     {
         margin-left:90%;
         margin-bottom:10%;
-        
+
     }
 }
 /* MOBILE */
 @media only screen and (max-width: 500px)
 {
     nav a, p, blockquote {font-size: 0.8em;}
-    .leftTimeline {margin-left: 160vw;}
-    .rightTimeline {margin-right:160vw;}
+    .leftTimeline {margin-left: 208.9%;}
+    .rightTimeline {margin-right:200%;}
 }
