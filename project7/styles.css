@@ -36,7 +36,7 @@ nav a:hover
     border-radius: 5px;
 }
 
-.skip {text-decoration:none; position:absolute; left:-999px; flex:0 0 100%;}
+.skip {text-decoration:none; position:absolute; left:-999px; flex:0 0 100%; color:white;}
 
 body
 {
